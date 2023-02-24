@@ -1,0 +1,105 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;font-family: 'Bree Serif', serif;
+    font-family: 'Itim', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+ .container{
+    width: 600px;
+   }
+   
+   .container .header{
+    border-radius: 6px 6px 0px 0px ;
+    background-color: rgb(91, 91, 91);
+    padding: 15px 40px 30px ;
+    color: greenyellow;
+    text-align: center;
+ }
+
+ .container .header h2{
+    margin: 10px;
+    font-size: 35px;
+ }
+
+ input {
+    width: 75%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 16px;
+ }
+
+ .addbtn{
+    width: 25%;
+    border: none;
+    padding: 10px;
+    background-color: rgb(63, 53, 53);
+    color: greenyellow;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 0px 10px 10px 0px;
+ }
+
+ .addbtn:hover{
+    background-color:black;
+ }
+
+ .header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .container .tasklist{
+    max-height: 300px;
+    overflow: auto;
+ }
+
+ .tasklist{
+    list-style-type: none;
+ }
+
+ .tasklist li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px ;
+    background-color: #beb9b9;
+    transition: 0.3;
+    user-select: none;
+ }
+
+ .tasklist li:hover{
+    background: rgb(205,204,204);
+ }
+
+ .closebtn{
+    display: none;
+    position: absolute;
+    right: 15px;
+ }
+
+ .tasklist li:hover .closebtn{
+    display: inline-block;
+ }
+
+ .tasklist li .closebtn i:hover{
+    color:red;
+ }
+
+ 
+
+
